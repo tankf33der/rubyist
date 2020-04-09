@@ -1,10 +1,10 @@
 # http://rosettacode.org/wiki/Yellowstone_sequence
 def yellow(n)
-a = [1, 2, 3]
-  b = {1=>true, 2=>true, 3=>true}
+  a = [1, 2, 3]
+  b = { 1 => true, 2 => true, 3 => true }
   i = 4
-  until a.length > n
-    if !b[i] and i.gcd(a[-1]) == 1 and i.gcd(a[-2]) > 1
+  until a.length >= n
+    if !b[i] && i.gcd(a[-1]) == 1 && i.gcd(a[-2]) > 1
       a << i
       b[i] = true
       i = 4
