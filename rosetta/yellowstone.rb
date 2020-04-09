@@ -13,5 +13,5 @@ def yellow(n)
   end
   a
 end
-p yellow(30)
 
+p yellow(30)
